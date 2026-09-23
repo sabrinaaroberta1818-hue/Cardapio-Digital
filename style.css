@@ -1,11 +1,11 @@
-body {
+body{
     margin: 0;
     background-color: #fff3df;
     color: #3b160d;
     font-family: Georgia, serif;
 }
 
-header {
+header{
     background-color: #b52b1e;
     color: white;
     text-align: center;
@@ -13,24 +13,24 @@ header {
     border-bottom: 8px solid #f28c28;
 }
 
-.cabecalho h1 {
+.cabecalho h1{
     margin: 0;
     font-size: 2.8rem;
     letter-spacing: 2px;
 }
 
-.cabecalho p {
+.cabecalho p{
     margin-top: 12px;
     font-size: 1.1rem;
 }
 
-main {
+main{
     width: 90%;
     max-width: 900px;
     margin: 40px auto;
 }
 
-.categoria {
+.categoria{
     background-color: #fffaf2;
     margin-bottom: 30px;
     padding: 25px 30px;
@@ -39,7 +39,7 @@ main {
     box-shadow: 0 4px 12px rgba(80, 30, 10, 0.12);
 }
 
-.categoria h2 {
+.categoria h2{
     margin-top: 0;
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -48,7 +48,7 @@ main {
     border-bottom: 2px solid #f5b041;
 }
 
-.item {
+.item{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,35 +57,35 @@ main {
     border-bottom: 1px dashed #d99a68;
 }
 
-.item:last-child {
+.item:last-child{
     border-bottom: none;
 }
 
-.item h3 {
+.item h3{
     margin: 0 0 6px;
     color: #6e2114;
     font-size: 1.15rem;
 }
 
-.item p {
+.item p{
     margin: 0;
     color: #744c3c;
     line-height: 1.5;
     font-size: 0.95rem;
 }
 
-.item strong {
+.item strong{
     color: #d94801;
     font-size: 1.05rem;
     white-space: nowrap;
 }
 
-.pedido {
+.pedido{
     text-align: center;
     margin: 40px 0;
 }
 
-button {
+button{
     padding: 15px 40px;
     background-color: #e85d04;
     color: white;
@@ -98,18 +98,194 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+button:hover{
     background-color: #b52b1e;
     transform: scale(1.04);
 }
 
-footer {
+footer{
     padding: 25px;
     background-color: #5c1a0d;
     color: #fff3df;
     text-align: center;
 }
 
-footer p {
+footer p{
     margin: 5px;
+}
+
+@media (min-width: 1200px){
+
+    main{
+        max-width: 1000px;
+    }
+
+    .categoria{
+        padding: 30px 35px;
+    }
+
+    .cabecalho h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 900px){
+
+    header{
+        padding: 40px 20px;
+    }
+
+    .cabecalho h1{
+        font-size: 2.4rem;
+    }
+
+    main{
+        width: 88%;
+        margin: 30px auto;
+    }
+
+    .categoria{
+        padding: 23px 25px;
+        margin-bottom: 25px;
+    }
+
+    .categoria h2{
+        font-size: 1.5rem;
+    }
+
+    .item{
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    body{
+        font-size: 15px;
+    }
+
+    header{
+        padding: 35px 15px;
+        border-bottom-width: 6px;
+    }
+
+    .cabecalho h1{
+        font-size: 2rem;
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+
+    .cabecalho p{
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    main{
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .categoria{
+        padding: 20px 18px;
+        margin-bottom: 20px;
+        border-left-width: 5px;
+        border-radius: 10px;
+    }
+
+    .categoria h2{
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        font-size: 1.35rem;
+    }
+
+    .item{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 15px 0;
+    }
+
+    .item h3{
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+
+    .item p{
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .item strong{
+        font-size: 1rem;
+        align-self: flex-end;
+    }
+
+    .pedido{
+        margin: 30px 0;
+    }
+
+    button{
+        width: 90%;
+        max-width: 300px;
+        padding: 14px 25px;
+        font-size: 0.95rem;
+    }
+
+    footer{
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 400px){
+    header{
+        padding: 30px 12px;
+    }
+
+    .cabecalho h1{
+        font-size: 1.7rem;
+    }
+
+    .cabecalho p{
+        font-size: 0.9rem;
+    }
+
+    main{
+        width: 94%;
+    }
+
+    .categoria{
+        padding: 18px 14px;
+    }
+
+    .categoria h2{
+        font-size: 1.2rem;
+    }
+
+    .item{
+        padding: 13px 0;
+    }
+
+    .item h3{
+        font-size: 1rem;
+    }
+
+    .item p{
+        font-size: 0.85rem;
+    }
+
+    .item strong{
+        font-size: 0.95rem;
+    }
+
+    button{
+        width: 95%;
+        padding: 13px 20px;
+    }
+
+    footer{
+        padding: 18px 10px;
+        font-size: 0.9rem;
+    }
 }
